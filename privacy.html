@@ -5,31 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - TabTrackerPro</title>
   <style>
+    /* Theme Colors */
+    :root {
+      --bg-primary: #0a0f2c;
+      --text-primary: #ffffff;
+      --text-secondary: #9f9fff;
+      --accent-color: #3A4ADE;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.8;
       margin: 20px auto;
       max-width: 800px;
-      color: #333;
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     }
+
     h1, h2 {
-      color: #4CAF50;
+      color: var(--accent-color);
     }
+
     h1 {
       text-align: center;
+      font-size: 2.5rem;
     }
+
+    h2 {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    p, ul {
+      color: var(--text-secondary);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
     a {
-      color: #4CAF50;
+      color: var(--accent-color);
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p>Effective Date: [26/11/2024]</p>
+  <p>Effective Date: [06/12/2024]</p>
 
   <h2>Introduction</h2>
   <p>Welcome to TabTrackerPro! Your privacy is critically important to us. This Privacy Policy explains how we handle your data when you use our Chrome extension.</p>
@@ -51,10 +91,9 @@
   <h2>Permissions</h2>
   <p>TabTrackerPro requires the following permissions for its functionality:</p>
   <ul>
-    <li><strong>activeTab:</strong> To access the active tab's URL temporarily.</li>
-    <li><strong>history:</strong> To track visited URLs and allow session saving.</li>
-    <li><strong>downloads:</strong> To enable users to save a list of URLs as a file.</li>
-    <li><strong>tabs:</strong> To manage open tabs for URL tracking and reopening.</li>
+    <li><strong>tabs:</strong> To retrieve and manage information about open tabs for tracking and reopening URLs.</li>
+    <li><strong>downloads:</strong> To enable users to save a list of URLs as a `.txt` file.</li>
+    <li><strong>storage:</strong> To save user settings (like theme preferences) and tab-related data across sessions.</li>
   </ul>
   <p>These permissions are used solely for their stated purposes and are not used to collect or transmit data.</p>
 
@@ -65,6 +104,6 @@
   <p>If you have any questions about this Privacy Policy, please contact us at:</p>
   <p>Email: <a href="mailto:hcheginidesign@gmail.com">hcheginidesign@gmail.com</a></p>
 
-  <p>Thank you for using TabTrackerPro!</p>
+  <p class="footer">Thank you for using TabTrackerPro!</p>
 </body>
 </html>
